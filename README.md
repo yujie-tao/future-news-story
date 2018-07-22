@@ -1,4 +1,4 @@
-# future new reader
+# Future New Reader
 
 ### Live Server Setup
 Install live-server: npm install -g live-server
