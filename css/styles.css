@@ -6,9 +6,16 @@ body, html {
 /*  padding-bottom: 5%;
   padding-top: 5%;*/
 }
+h1,h2,h3,h4,h5{
+  line-height: inherit;
+}
 h1{
   font-family: 'Fjalla One', sans-serif;
   font-size:1.5rem;
+}
+h2{
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 h3{
   font-size: 1.2rem;
@@ -16,6 +23,10 @@ h3{
 h4{
   font-weight: 300;
   font-size:1.2rem;
+}
+h5{
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .all{
@@ -143,7 +154,7 @@ h4{
   position: absolute;
   width: 272px;
   height: 574px;
-  background: white;
+  background: black;
   border-radius: 38px;
   position: absolute;
   left: 50%;
@@ -153,30 +164,30 @@ h4{
 .bottom_black .screen {
   width: 264px;
   height: 562px;
-  background: white;
+  background: black;
   border-radius: 38px;
   background-size: 120%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: black;
   animation: 5s screen forwards;
   animation-delay: 2.8s;
 }
-.bottom_black .screen:after {
+/*.bottom_black .screen:after {
   position: absolute;
   content: "";
   display: block;
   width: 264px;
   height: 562px;
   background: white;
-  border-radius: 38px;;
+  border-radius: 38px;
   background-size: 110%;
   opacity: 0;
   animation: 2s bgi forwards;
   animation-delay: 6s;
-}
+}*/
 @keyframes bgi {
   0% {
     opacity: 0;
@@ -249,29 +260,36 @@ h4{
     background-color: #fff;
   }
 }
-.bottom_black .time {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.bottom_black .welcome {
+  /*position: absolute;*/
+ /* left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);*/
+  width: 90%;
   text-align: center;
-  color: white;
+  color: #222222;
   top: 22%;
   opacity: 0;
-  animation: 2s time forwards;
+  animation: 2s welcome forwards;
   animation-delay: 6s;
+  margin:auto;
+  margin-top: 70%;
 }
-.bottom_black .time .hr {
+.bottom_black h2{
+  white-space: nowrap;
+}
+/*.bottom_black .time .hr {
   font-size: 50px;
   font-weight: lighter;
   margin: 5px 0;
-}
-.bottom_black .time .date {
+}*/
+
+/*.bottom_black .time .date {
   font-size: 12px;
   white-space: nowrap;
   font-weight: lighter;
-}
-@keyframes time {
+}*/
+@keyframes welcome {
   0% {
     opacity: 0;
   }
