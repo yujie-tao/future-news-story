@@ -29,10 +29,18 @@ h5{
   font-weight: 300;
 }
 
+:root{
+  --colorBlack: #222;
+  --colorBlue: #4557bb;
+}
+
+
 .all{
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+/***iPhoneX***/
 
 .bottom_black {
   width: 300px;
@@ -175,131 +183,7 @@ h5{
   animation: 5s screen forwards;
   animation-delay: 2.8s;
 }
-/*.bottom_black .screen:after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 264px;
-  height: 562px;
-  background: white;
-  border-radius: 38px;
-  background-size: 110%;
-  opacity: 0;
-  animation: 2s bgi forwards;
-  animation-delay: 6s;
-}*/
-@keyframes bgi {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.bottom_black .screen .logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 60px;
-  opacity: 0;
-  animation: 2s logo forwards ease-in-out;
-  animation-delay: 0.8s;
-}
-.bottom_black .screen .hello {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 45px;
-  animation: 3s hello forwards;
-  animation-delay: 2.8s;
-  opacity: 0;
-}
-@keyframes hello {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes logo {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes screen {
-  0% {
-    background-color: #000;
-  }
-  20% {
-    background-color: #fff;
-  }
-  100% {
-    background-color: #fff;
-  }
-}
-.bottom_black .welcome {
-  /*position: absolute;*/
- /* left: 50%;
-  margin-top: 50%;
-  transform: translate(-50%, -50%);*/
-  width: 90%;
-  text-align: center;
-  color: #222222;
-  top: 22%;
-  opacity: 0;
-  animation: 2s welcome forwards;
-  animation-delay: 6s;
-  margin:auto;
-  margin-top: 70%;
-}
-.bottom_black h2{
-  white-space: nowrap;
-}
-/*.bottom_black .time .hr {
-  font-size: 50px;
-  font-weight: lighter;
-  margin: 5px 0;
-}*/
 
-/*.bottom_black .time .date {
-  font-size: 12px;
-  white-space: nowrap;
-  font-weight: lighter;
-}*/
-@keyframes welcome {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .bottom_black .camera {
   position: absolute;
   text-outline: 50px;
@@ -345,3 +229,95 @@ h5{
   border-radius: 50px;
   filter: blur(1px);
 }
+
+/*.bottom_black .screen:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 264px;
+  height: 562px;
+  background: white;
+  border-radius: 38px;
+  background-size: 110%;
+  opacity: 0;
+  animation: 2s bgi forwards;
+  animation-delay: 6s;
+}*/
+
+
+/****interaction****/
+@keyframes bgi {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes screen {
+  0% {
+    background-color: #000;
+  }
+  20% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+.bottom_black .welcome {
+  width: 90%;
+  text-align: center;
+  color: #222222;
+  top: 22%;
+  opacity: 0;
+  animation: 2s welcome forwards;
+  animation-delay: 3s;
+  margin:auto;
+  margin-top: 70%;
+}
+.bottom_black h2{
+  white-space: nowrap;
+}
+
+@keyframes welcome {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.voice{
+  width: 100px;
+  background-color: var(--colorBlue);
+  border-radius: 0;
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  height: 50px;
+  transform: translateX(-50%);
+  left:50%;
+}
+.voice i{
+  color: white;
+  bottom: 0;
+  font-size: 25px;
+  margin-top:15px;
+  transform: translateX(-50%);
+  position: absolute;
+  margin-bottom: 10px;
+}
+
+}
+
+
