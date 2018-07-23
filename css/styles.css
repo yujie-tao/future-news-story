@@ -21,8 +21,8 @@ h3{
   font-size: 1.2rem;
 }
 h4{
-  font-weight: 300;
-  font-size:1.2rem;
+  font-size: 1.1rem;
+  font-family: 'Fjalla One', sans-serif;
 }
 h5{
   font-size: 1rem;
@@ -246,7 +246,7 @@ h5{
 
 
 /****interaction****/
-@keyframes bgi {
+/*@keyframes bgi {
   0% {
     opacity: 0;
   }
@@ -256,7 +256,7 @@ h5{
   100% {
     opacity: 1;
   }
-}
+}*/
 
 @keyframes screen {
   0% {
@@ -297,6 +297,7 @@ h5{
 }
 
 .voice{
+  opacity: 0;
   width: 100px;
   background-color: var(--colorBlue);
   border-radius: 0;
@@ -307,7 +308,23 @@ h5{
   height: 50px;
   transform: translateX(-50%);
   left:50%;
+  animation: 2s voice forwards;
+  animation-delay: 3s;
 }
+
+@keyframes voice {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .voice i{
   color: white;
   bottom: 0;
@@ -316,8 +333,38 @@ h5{
   transform: translateX(-50%);
   position: absolute;
   margin-bottom: 10px;
+  left: 50%;
 }
 
+h4.a_category{
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+}
+h1.a_title{
+  color:white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  width: 95%;
+  font-size: 1.3rem;
+  margin: auto;
+  margin-top: 20px;
+}
+h5.a_author{
+  color: white;
+  text-align: center;
+}
+.a_img{
+  text-align: center;
+}
+.a_img img{
+  border-radius: 25px;
+  margin:auto;
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
 }
 
 
