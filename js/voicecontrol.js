@@ -7,15 +7,22 @@ $(".voice").click(function(){
 
 function loadArticle(){
 
-  $('.a_category').html("technology");
-  $('.a_img').html('<img src="../img/ai.jpg">');
-  $('.a_title').html("AI Companies Race To Get Upper Hand In Cybersecurity — Before Hackers Do");
-  $('.a_author').html("By Reinhardt Krause");
+  setTimeout(function(){
+    // $('.articles').addClass("fade-in");
+    $('.articles').css({"opacity":"0","animation": "2s welcome forwards"});
+    $('.a_category').html("technology");
+    $('.a_img').html('<img src="../img/ai.jpg">');
+    $('.a_title').html("AI Companies Race To Get Upper Hand In Cybersecurity — Before Hackers Do");
+    $('.a_author').html("By Reinhardt Krause"); 
+   }, 500);
+
+ 
 
 }
 
 $(".articles").click(function(){
   $(".articles").css({"display":"none"});
+  $('.bg-img').html('<img src="../img/ai.jpg">');
 });
 
 function vierSummary(){
