@@ -232,8 +232,8 @@ h5{
 
 /*****Imports******/
 .fade-in {
-  -webkit-animation: fade-in 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
-          animation: fade-in 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+  -webkit-animation: fade-in 0.7s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+          animation: fade-in 0.7s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
 }
 .fade-out {
   -webkit-animation: fade-out 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
@@ -418,7 +418,7 @@ h5.a_author{
   height: 562px;
   border-radius:38px;
   background-color: black;
-  opacity: 0.3;
+  opacity: 0.5;
   bottom: 0;
   font-size: 25px;
   margin-top: 15px;
@@ -443,6 +443,7 @@ h3.summary {
   transform: translateX(-50%);
   position: absolute;
   left: 50%;
+  font-weight: 300;
 }
 
 
